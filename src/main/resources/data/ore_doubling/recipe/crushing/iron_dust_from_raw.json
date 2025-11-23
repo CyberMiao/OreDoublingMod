@@ -1,0 +1,10 @@
+{
+  "type": "ore_doubling:crushing",
+  "input": {
+    "item": "minecraft:raw_iron"
+  },
+  "output": {
+    "id": "ore_doubling:crushed_iron_dust",
+    "count": 2
+  }
+}

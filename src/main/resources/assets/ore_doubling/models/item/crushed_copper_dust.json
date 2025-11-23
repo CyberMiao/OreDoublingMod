@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ore_doubling:item/crystal_item"
+    "layer0": "ore_doubling:item/crushed_copper_dust"
   }
 }

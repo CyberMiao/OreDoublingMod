@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "IFI",
+    "ICI"
+  ],
+  "key": {
+    "I": { "item": "minecraft:iron_ingot" },
+    "P": { "item": "minecraft:piston" },
+    "F": { "item": "minecraft:flint" },
+    "C": { "item": "minecraft:cobblestone" }
+  },
+  "result": {
+    "id": "ore_doubling:crusher",
+    "count": 1
+  }
+}
