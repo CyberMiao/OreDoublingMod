@@ -12,6 +12,7 @@ public class ModItems {
 
     public static final Item CRUSHED_IRON_DUST = registerItem("crushed_iron_dust", new Item(new Item.Settings()));
     public static final Item CRUSHED_COPPER_DUST = registerItem("crushed_copper_dust", new Item(new Item.Settings()));
+    public static final Item CRYSTAL = registerItem("crystal", new Item(new Item.Settings()));
 
     public static Item registerItem(String id, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(OreDoubling.MOD_ID, id), item);
@@ -22,6 +23,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(CRUSHED_IRON_DUST);
             entries.add(CRUSHED_COPPER_DUST);
+            entries.add(CRYSTAL);
         });
     }
 }

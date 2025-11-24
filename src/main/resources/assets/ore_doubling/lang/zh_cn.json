@@ -1,6 +1,7 @@
 {
   "item.ore_doubling.crushed_iron_dust": "碎铁屑",
   "item.ore_doubling.crushed_copper_dust": "碎铜屑",
+  "item.ore_doubling.crystal": "水晶",
   "block.ore_doubling.crusher": "粉碎机",
   "itemGroup.ore_doubling.ore_doubling_group": "矿物增产"
 }
