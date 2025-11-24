@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "ore_doubling:crystal_ore",
+    "ore_doubling:deepslate_crystal_ore"
+  ]
+}
