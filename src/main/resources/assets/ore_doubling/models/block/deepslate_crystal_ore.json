@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ore_doubling:block/deepslate_crystal_ore"
+  }
+}
