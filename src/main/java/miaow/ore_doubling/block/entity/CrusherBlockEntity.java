@@ -3,6 +3,7 @@ package miaow.ore_doubling.block.entity;
 import miaow.ore_doubling.inventory.ImplementedInventory;
 import miaow.ore_doubling.recipe.CrushingRecipe;
 import miaow.ore_doubling.registry.ModBlockEntities;
+import miaow.ore_doubling.registry.ModItems;
 import miaow.ore_doubling.registry.ModRecipes;
 import miaow.ore_doubling.screen.CrusherScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
@@ -29,14 +30,13 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-// 假设你已经有了 ImplementedInventory 接口，如果没有，请参考 Fabric Wiki
 public class CrusherBlockEntity extends BlockEntity implements ImplementedInventory, ExtendedScreenHandlerFactory {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(3, ItemStack.EMPTY);
 
     // 进度条数据
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 72; // 处理时间
+    private int maxProgress = 200; // 处理时间
     private int fuelTime = 0;
     private int maxFuelTime = 0;
 
@@ -159,7 +159,7 @@ public class CrusherBlockEntity extends BlockEntity implements ImplementedInvent
     }
 
     private boolean isConsumingFuel() { return this.fuelTime > 0; }
-    private boolean hasFuelInSlot() { return !this.getStack(1).isEmpty() && this.getStack(1).getItem() == Items.COAL; } // 简化：只认煤炭
+    private boolean hasFuelInSlot() { return !this.getStack(1).isEmpty() && this.getStack(1).getItem() == ModItems.CRYSTAL; }
     private void consumeFuel() {
         this.removeStack(1, 1);
         this.fuelTime = 1600; // 煤炭燃烧时间

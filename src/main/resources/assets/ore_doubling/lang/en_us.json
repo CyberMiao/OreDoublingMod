@@ -1,6 +1,7 @@
 {
   "item.ore_doubling.crushed_iron_dust": "Crushed Iron Dust",
   "item.ore_doubling.crushed_copper_dust": "Crushed Copper Dust",
+  "item.ore_doubling.crystal": "Crystal",
   "block.ore_doubling.crusher": "Crusher",
   "itemGroup.ore_doubling.ore_doubling_group": "Ore Doubling"
 }
